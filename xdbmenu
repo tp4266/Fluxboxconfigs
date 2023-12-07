@@ -1,0 +1,106 @@
+[submenu] (Applications)
+  [submenu] (Accessories)
+    [exec] (Archive Manager) {file-roller }
+    [exec] (Backups) {deja-dup }
+    [exec] (Calculator) {gnome-calculator}
+    [exec] (Characters) {/usr/bin/gnome-characters}
+    [exec] (Clocks) {gnome-clocks}
+    [exec] (Disks) {gnome-disks}
+    [exec] (Files) {nautilus --new-window }
+    [exec] (Fonts) {gnome-font-viewer }
+    [exec] (OpenRGB) {openrgb}
+    [exec] (Passwords and Keys) {seahorse }
+    [exec] (Slimbook Battery) {slimbookbattery}
+    [exec] (TeXInfo) {/usr/bin/x-terminal-emulator -e info}
+    [exec] (Text Editor) {gnome-text-editor }
+    [exec] (Vim) {/usr/bin/x-terminal-emulator -e vim }
+    [exec] (Winetricks) {winetricks --gui}
+  [end] # (Accessories)
+  [submenu] (Development)
+    [exec] (GitKraken) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/gitkraken_gitkraken.desktop /snap/bin/gitkraken --no-sandbox }
+    [exec] (Qt Creator) {qtcreator }
+  [end] # (Development)
+  [submenu] (Games)
+    [exec] (AisleRiot Solitaire) {sol}
+    [exec] (Lutris) {lutris }
+    [exec] (Mahjongg) {gnome-mahjongg}
+    [exec] (Mines) {gnome-mines}
+    [exec] (Sudoku) {gnome-sudoku}
+  [end] # (Games)
+  [submenu] (Graphics)
+    [exec] (Document Scanner) {simple-scan}
+    [exec] (GNU Image Manipulation Program) {gimp-2.10 }
+    [exec] (GNU Image Manipulation Program) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/gimp_gimp.desktop /snap/bin/gimp }
+    [exec] (Image Viewer) {eog }
+    [exec] (Shotwell) {shotwell }
+    [exec] (Shotwell Profile Browser) {shotwell -b}
+  [end] # (Graphics)
+  [submenu] (Multimedia)
+    [exec] (Cheese) {cheese}
+    [exec] (EasyTAG) {easytag }
+    [exec] (PulseAudio Volume Control) {pavucontrol}
+    [exec] (Rhythmbox) {rhythmbox }
+    [exec] (Spotify) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/spotify_spotify.desktop /snap/bin/spotify }
+    [exec] (Videos) {totem }
+  [end] # (Multimedia)
+  [submenu] (Network)
+    [exec] (Discord) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/discord_discord.desktop /snap/bin/discord}
+    [exec] (Firefox Web Browser) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/firefox_firefox.desktop /snap/bin/firefox }
+    [exec] (Opera) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/opera_opera.desktop /snap/bin/opera }
+    [exec] (Remmina) {remmina-file-wrapper }
+    [exec] (Steam) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/steam_steam.desktop /snap/bin/steam }
+    [exec] (Thunderbird Mail) {thunderbird }
+    [exec] (Tor Browser) {sh -c '"/home/yungvetgrampa/Downloads/tor-browser-linux64-12.0.6_ALL/tor-browser/Browser/start-tor-browser" --detach || ([ !  -x "/home/yungvetgrampa/Downloads/tor-browser-linux64-12.0.6_ALL/tor-browser/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy /home/yungvetgrampa/.local/share/applications/start-tor-browser.desktop}
+    [exec] (Transmission) {transmission-gtk }
+    [exec] (Wireshark) {wireshark }
+    [exec] (uGet) {env GDK_BACKEND=x11 uget-gtk }
+  [end] # (Network)
+  [submenu] (Office)
+    [exec] (Calendar) {gnome-calendar }
+    [exec] (Document Viewer) {evince }
+    [exec] (LibreOffice) {libreoffice }
+    [exec] (LibreOffice Calc) {libreoffice --calc }
+    [exec] (LibreOffice Draw) {libreoffice --draw }
+    [exec] (LibreOffice Impress) {libreoffice --impress }
+    [exec] (LibreOffice Math) {libreoffice --math }
+    [exec] (LibreOffice Writer) {libreoffice --writer }
+    [exec] (iCloud Calendar) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_calendar.desktop /snap/bin/icloud-for-linux.calendar}
+    [exec] (iCloud Contacts) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_contacts.desktop /snap/bin/icloud-for-linux.contacts}
+    [exec] (iCloud Drive) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_drive.desktop /snap/bin/icloud-for-linux.drive}
+    [exec] (iCloud Find My Friend) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_find-my-friends.desktop /snap/bin/icloud-for-linux.find-my-friends}
+    [exec] (iCloud Find My iPhone) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_find-my-iphone.desktop /snap/bin/icloud-for-linux.find-my-iphone}
+    [exec] (iCloud Keynote) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_keynote.desktop /snap/bin/icloud-for-linux.keynote}
+    [exec] (iCloud Mail) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_mail.desktop /snap/bin/icloud-for-linux.mail}
+    [exec] (iCloud Notes) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_notes.desktop /snap/bin/icloud-for-linux.notes}
+    [exec] (iCloud Numbers) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_numbers.desktop /snap/bin/icloud-for-linux.numbers}
+    [exec] (iCloud Pages) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_pages.desktop /snap/bin/icloud-for-linux.pages}
+    [exec] (iCloud Photos) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_photos.desktop /snap/bin/icloud-for-linux.photos}
+    [exec] (iCloud Reminders) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/icloud-for-linux_reminders.desktop /snap/bin/icloud-for-linux.reminders}
+  [end] # (Office)
+  [submenu] (Other)
+    [exec] (Packet Tracer 8.2.1) {/opt/pt/packettracer }
+  [end] # (Other)
+  [submenu] (Settings)
+    [exec] (Additional Drivers) {/usr/bin/software-properties-gtk --open-tab=4}
+    [exec] (Advanced Network Configuration) {nm-connection-editor}
+    [exec] (Firewall Configuration) {gufw}
+    [exec] (IBus Preferences) {ibus-setup}
+    [exec] (KDE System Settings) {systemsettings5}
+    [exec] (Language Support) {/usr/bin/gnome-language-selector}
+    [exec] (Software & Updates) {software-properties-gtk}
+  [end] # (Settings)
+  [submenu] (System)
+    [exec] (Disk Usage Analyzer) {baobab }
+    [exec] (Firmware Updater) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/firmware-updater_firmware-updater.desktop /snap/bin/firmware-updater}
+    [exec] (GKrellM System Monitor) {gkrellm}
+    [exec] (GParted) {/usr/sbin/gparted }
+    [exec] (Grub Customizer) {grub-customizer}
+    [exec] (Konsole) {konsole}
+    [exec] (Logs) {gnome-logs}
+    [exec] (Snap Store) {env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/snap-store_snap-store.desktop /snap/bin/snap-store }
+    [exec] (Software Updater) {/usr/bin/update-manager}
+    [exec] (Startup Disk Creator) {usb-creator-gtk}
+    [exec] (System Monitor) {gnome-system-monitor}
+    [exec] (VMware Player) {/usr/bin/vmplayer }
+  [end] # (System)
+[end] # (Applications)
